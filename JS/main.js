@@ -397,3 +397,32 @@ const mandarinConsonants = {
      {IPA: 'ɥ', Symbols: 'yu-/-ü-/ㄩ', Examples: '月' },
 };
 */
+
+/*
+//attempt to use loops with objects, before switch to arrays
+function tableCombiner(table1, table2) {
+let customizedTable = table1;
+for(i = 0; i <= customizedTable[customizedTable.length - 1 ]; i++) {
+     for (j = 0; j <= table2[table2.length - 1]; j++) {
+          if (customizedTable[i].IPA === table2[j].IPA) {
+               customizedTable[IPA][label] = customizedTable[IPA][label] + ", " + table2[IPA][label];
+               break;
+          } 
+
+    }
+}
+for(j = 0; j <= table2[table2.length - 1]; j++) {
+     for(i = 0; i <= customizedTable[customizedTable.length - 1 ]; i++) {
+          let count = 0;
+          if(table2[j].IPA !== customizedTable[i]) {
+               countt++;
+               if (count === customizedTable.length) {
+                    customizedTable.push(table2[j]);
+               }
+          }
+     }
+}
+console.table(customizedTable);
+}
+tableCombiner(mandarinConsonants, cantoneseConsonants)
+*/
