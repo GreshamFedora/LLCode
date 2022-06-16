@@ -167,29 +167,7 @@ console.table(tableCombiner(mandarinConsonants, cantoneseConsonants));
 */
 
 //make a it a function with two inputs, tableComibiner(customizedTable, cantoneseConsonants) {}
-let customizedTable = mandarinConsonants;
-for(i = 0; i <= customizedTable[customizedTable.length - 1 ]; i++) {
-     for (j = 0; j <= cantoneseConsonants[cantoneseConsonants.length - 1]; j++) {
-          if (customizedTable[i].IPA === cantoneseConsonants[j].IPA) {
-               customizedTable[IPA][label] = customizedTable[IPA][label] + ", " + cantoneseConsonants[IPA][label];
-               break;
-          } 
-
-
-for(j = 0; j <= cantoneseConsonants[cantoneseConsonants.length - 1]; j++) {
-     for(i = 0; i <= customizedTable[customizedTable.length - 1 ]; i++) {
-          let count = 0;
-          if(cantoneseConsonants[j].IPA !== customizedTable[i]) {
-               countt++;
-               if (count === customizedTable.length) {
-                    customizedTable.push(cantoneseConsonants[j]);
-               }
-          }
-     }
-}
-console.table(customizedTable);
-
-      
+   
 
 
 
