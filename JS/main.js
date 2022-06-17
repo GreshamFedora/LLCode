@@ -26,7 +26,6 @@ function hokkienBtn() {
 }
 
 
-
 //test case
 let arr1 = [
      ['IPA', 'Symbols', 'Examples'],
@@ -42,6 +41,16 @@ let arr1 = [
      ['j', 'j/一', '月'],
      ['k', 'g-/ㄍ', '家']
  ]
+ 
+ let arr3 = [
+     ['IPA', 'Symbols', 'Examples'],
+     [arr1[1]],
+     [arr1[2][0] + " | " + arr2[1][0], [arr1[2][1] + " | " + arr2[1][1]], [arr1[2][2] + " | " + arr2[1][2]]],
+ ]
+ console.table(arr3)
+ //LATEST 20220616 -- need to see about getting sample output to populate an html table
+ //--> https://stackoverflow.com/questions/38393040/populate-html-table-with-javascript-array
+ //--> populating an html table w/ object: https://stackoverflow.com/questions/50996553/how-to-populate-an-html-table-from-javascript-object
  
  //This merges the individual elements
  let arr3 = arr1[1][1] + " | " + arr2[0][1]
