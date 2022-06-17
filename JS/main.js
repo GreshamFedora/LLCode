@@ -26,6 +26,35 @@ function hokkienBtn() {
 }
 
 
+
+//test case
+let arr1 = [
+     ['IPA', 'Symbols', 'Examples'],
+     ['ɕ', 'x/ㄒ', '西'],
+     ['f', 'f/ㄈ', '非'],
+     ['j', 'y-/i-/一', '牙'],
+     ['k', 'g/ㄍ', '干'],
+ ]
+ let arr2 = [
+     ['IPA', 'Symbols', 'Examples'],
+     ['f', 'f/ㄈ', '客'],
+     ['h', 'h/ㄏ', '虎'],
+     ['j', 'j/一', '月'],
+     ['k', 'g-/ㄍ', '家']
+ ]
+ 
+ //This merges the individual elements
+ let arr3 = arr1[1][1] + " | " + arr2[0][1]
+ console.table(arr3)
+ //adds a 7 at the beginning of the first array
+ //array[0].unshift(7)
+ 
+ //This just concatenates them into i.e. into a string & the second line confirms that
+ //array = array + ", " + arr2;
+ //console.log(typeof(array))
+ //console.table(array)
+ 
+
 //submit button
 
 
