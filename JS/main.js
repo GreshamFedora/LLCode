@@ -442,3 +442,26 @@ console.table(customizedTable);
 }
 tableCombiner(mandarinConsonants, cantoneseConsonants)
 */
+
+/*
+//THIS combined all of the symbosl and examples
+
+const mandarinConsonants = [
+     {IPA: 'f', Symbols: 'f/ㄈ', Examples: '非'},
+     {IPA: 'j', Symbols: 'y-/i-/一', Examples: '牙'},
+     {IPA: 'k', Symbols: 'g/ㄍ', Examples: '干'},
+]
+const cantoneseConsonants = [
+     {IPA: 'f', Symbols: 'f/ㄈ', Examples: '客'},
+     {IPA: 'h', Symbols: 'h/ㄏ', Examples: '虎'},
+     {IPA: 'j', Symbols: 'j/一', Examples: '月'},
+     {IPA: 'k', Symbols: 'g-/ㄍ', Examples: '家'},
+]
+let combinedTable = mandarinConsonants
+combinedTable.forEach((zebra, i) => {
+     combinedTable[i].Symbols = combinedTable[i].Symbols + ' ** ' + cantoneseConsonants[i].Symbols
+     combinedTable[i].Examples = combinedTable[i].Examples + ' ** ' + cantoneseConsonants[i].Examples
+})     
+
+console.table(combinedTable)
+*/
