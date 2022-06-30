@@ -1,3 +1,23 @@
+//combines arrays, not including repeating elements
+Array.prototype.unique = function() {
+     var a = this.concat();
+     for(var i=0; i<a.length; ++i) {
+         for(var j=i+1; j<a.length; ++j) {
+             if(a[i] === a[j])
+                 a.splice(j--, 1);
+         }
+     }
+ 
+     return a;
+ 
+ };
+ 
+ let arr1 = ['ɕ','f','j','k','kʰ'];
+ let arr2 = ['f','h','j','k','k̚']
+ var combinedArr1 = arr1.concat(arr2).unique();
+ console.log(combinedArr1 )
+
+
 //enables button to select tables
 const cn = document.querySelector('#mandarin');
 const ct = document.querySelector('#cantonese');
